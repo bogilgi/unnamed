@@ -1,0 +1,478 @@
+<title>Dopamine Desk</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+/* Layout: single narrow column, one live demo panel carrying the thesis, bands of flat color between sections. */
+:root{
+  --paper:#f4f6f2; --surface:#ffffff; --sunk:#eceee8;
+  --ink:#141d1a; --ink-soft:#57635e; --ink-faint:#8a948f;
+  --line:#dde1d9;
+  --accent:#0d6b58; --accent-ink:#ffffff; --accent-soft:#e3f0ea;
+  --low:#4d7ba6; --med:#0d6b58; --high:#b3690c;
+  --low-bg:#e6eef5; --med-bg:#e3f0ea; --high-bg:#f7ecdd;
+  --radius:10px;
+  --display:"Bricolage Grotesque","Trebuchet MS",system-ui,sans-serif;
+  --body:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,"SFMono-Regular",Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#0f1412; --surface:#161d1a; --sunk:#1b2320;
+  --ink:#e9ede9; --ink-soft:#9ba69f; --ink-faint:#6d7872;
+  --line:#28312c;
+  --accent:#4ed0ac; --accent-ink:#06120e; --accent-soft:#16302a;
+  --low:#86abd0; --med:#4ed0ac; --high:#dda358;
+  --low-bg:#16222e; --med-bg:#13302a; --high-bg:#2c2113;
+  color-scheme:dark;
+}}
+:root[data-theme="dark"]{
+  --paper:#0f1412; --surface:#161d1a; --sunk:#1b2320;
+  --ink:#e9ede9; --ink-soft:#9ba69f; --ink-faint:#6d7872;
+  --line:#28312c;
+  --accent:#4ed0ac; --accent-ink:#06120e; --accent-soft:#16302a;
+  --low:#86abd0; --med:#4ed0ac; --high:#dda358;
+  --low-bg:#16222e; --med-bg:#13302a; --high-bg:#2c2113;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
+.band{width:100%}
+.band--sunk{background:var(--sunk)}
+.wrap{max-width:720px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:56px}
+.wrap--tight{padding-block:40px}
+h1,h2,h3{font-family:var(--display);font-weight:700;letter-spacing:-.02em;text-wrap:balance;margin:0}
+h1{font-size:clamp(2rem,6.4vw,3.1rem);line-height:1.08}
+h2{font-size:clamp(1.45rem,4.2vw,1.95rem);line-height:1.15;margin-bottom:10px}
+h3{font-size:1.02rem;font-weight:700;letter-spacing:-.01em}
+p{margin:0 0 16px}
+.lede{font-size:1.1rem;color:var(--ink-soft);margin-bottom:26px}
+.eyebrow{font-family:var(--mono);font-size:.7rem;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-faint);margin:0 0 12px}
+.muted{color:var(--ink-soft)}
+.small{font-size:.86rem}
+.tiny{font-size:.78rem;color:var(--ink-faint)}
+
+/* header */
+.top{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-block:20px 0}
+.mark{display:flex;align-items:center;gap:9px;font-family:var(--display);font-weight:700;letter-spacing:-.02em}
+.mark i{width:13px;height:13px;border-radius:3px;background:var(--accent);display:block;flex:none}
+.pill{font-family:var(--mono);font-size:.72rem;border:1px solid var(--line);border-radius:999px;padding:5px 11px;color:var(--ink-soft);white-space:nowrap}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-family:var(--body);font-weight:600;font-size:1rem;background:var(--accent);color:var(--accent-ink);border:1px solid var(--accent);padding:14px 24px;border-radius:var(--radius);cursor:pointer;text-decoration:none;transition:transform .12s ease,opacity .12s ease}
+.btn:hover{opacity:.9}
+.btn:active{transform:translateY(1px)}
+.btn--ghost{background:transparent;color:var(--ink);border-color:var(--line)}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-bottom:10px}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
+
+/* demo */
+.demo{background:var(--surface);border:1px solid var(--line);border-radius:14px;overflow:hidden;margin-top:30px}
+.demo__head{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:13px 16px;border-bottom:1px solid var(--line);flex-wrap:wrap}
+.demo__title{font-family:var(--mono);font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-faint)}
+.demo__body{padding:16px}
+.ask{font-family:var(--display);font-weight:500;font-size:1.02rem;margin-bottom:12px}
+.energy{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:6px}
+.ebtn{font-family:var(--body);font-size:.9rem;font-weight:600;background:var(--sunk);color:var(--ink-soft);border:1px solid transparent;border-radius:var(--radius);padding:11px 6px;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:3px;transition:background .15s ease,color .15s ease,border-color .15s ease}
+.ebtn span{font-size:1.15rem;line-height:1}
+.ebtn[aria-pressed="true"][data-e="low"]{background:var(--low-bg);color:var(--low);border-color:var(--low)}
+.ebtn[aria-pressed="true"][data-e="med"]{background:var(--med-bg);color:var(--med);border-color:var(--med)}
+.ebtn[aria-pressed="true"][data-e="high"]{background:var(--high-bg);color:var(--high);border-color:var(--high)}
+.badbtn{width:100%;margin-top:8px;font-family:var(--body);font-size:.86rem;font-weight:600;background:transparent;border:1px dashed var(--line);color:var(--ink-soft);border-radius:var(--radius);padding:10px;cursor:pointer}
+.badbtn[aria-pressed="true"]{border-style:solid;border-color:var(--ink-soft);background:var(--sunk);color:var(--ink)}
+.tasks{list-style:none;margin:16px 0 0;padding:0;display:flex;flex-direction:column;gap:8px;min-height:188px}
+.task{display:flex;align-items:flex-start;gap:11px;padding:11px 13px;background:var(--sunk);border-radius:var(--radius);animation:rise .22s ease both}
+@keyframes rise{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.task{animation:none}}
+.task i{width:9px;height:9px;border-radius:50%;flex:none;margin-top:8px}
+.task-main{min-width:0;flex:1}
+.task-t{font-size:.95rem;line-height:1.4}
+.task-m{font-family:var(--mono);font-size:.68rem;color:var(--ink-faint);letter-spacing:.04em;margin-top:3px}
+.permits{margin:14px 0 0;padding:14px;background:var(--sunk);border-radius:var(--radius);font-size:.89rem;color:var(--ink-soft)}
+.permits p{margin:0 0 9px;display:flex;gap:9px;align-items:flex-start}
+.permits p:last-child{margin:0}
+.permits em{font-style:normal;color:var(--accent);flex:none}
+.demo__foot{padding:12px 16px;border-top:1px solid var(--line);font-size:.8rem;color:var(--ink-faint)}
+
+/* content blocks */
+.stack{display:flex;flex-direction:column;gap:22px}
+.fail{border-left:2px solid var(--line);padding-left:16px}
+.fail h3{margin-bottom:5px}
+.fail p{margin:0;color:var(--ink-soft);font-size:.95rem}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:17px;min-width:0}
+.card h3{margin-bottom:6px}
+.card p{margin:0;font-size:.92rem;color:var(--ink-soft)}
+.feat{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(248px,1fr));gap:3px 22px}
+.feat li{padding:8px 0 8px 20px;position:relative;font-size:.94rem;border-bottom:1px solid var(--line);min-width:0}
+.feat li::before{content:"";position:absolute;left:0;top:17px;width:7px;height:7px;border-radius:2px;background:var(--accent)}
+.feat li b{font-weight:600}
+
+/* pricing */
+.tiers{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;margin-top:22px}
+.tier{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:22px;display:flex;flex-direction:column;gap:12px;min-width:0}
+.tier--pick{border-color:var(--accent);border-width:2px}
+.tier__tag{font-family:var(--mono);font-size:.68rem;letter-spacing:.11em;text-transform:uppercase;color:var(--accent)}
+.price{font-family:var(--display);font-weight:700;font-size:2.1rem;letter-spacing:-.03em;line-height:1;font-variant-numeric:tabular-nums}
+.price small{font-family:var(--body);font-size:.85rem;font-weight:400;color:var(--ink-faint);letter-spacing:0}
+.tier ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:7px;font-size:.91rem;color:var(--ink-soft);flex:1}
+.tier li{padding-left:18px;position:relative}
+.tier li::before{content:"+";position:absolute;left:0;color:var(--accent);font-weight:600}
+
+/* signup */
+.signup{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:22px}
+.form{display:flex;gap:9px;flex-wrap:wrap;margin-top:14px}
+.form input{flex:1 1 200px;min-width:0;font-family:var(--body);font-size:1rem;padding:13px 14px;border:1px solid var(--line);border-radius:var(--radius);background:var(--paper);color:var(--ink)}
+.form input::placeholder{color:var(--ink-faint)}
+.note{margin-top:11px;font-size:.84rem;color:var(--ink-faint)}
+.note--ok{color:var(--accent);font-weight:500}
+.copyline{display:flex;gap:9px;align-items:center;flex-wrap:wrap;margin-top:12px;font-family:var(--mono);font-size:.88rem;background:var(--sunk);padding:11px 13px;border-radius:var(--radius);word-break:break-all}
+.copyline button{font-family:var(--body);font-size:.8rem;font-weight:600;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:7px;padding:6px 11px;cursor:pointer}
+
+/* faq */
+details{border-bottom:1px solid var(--line);padding:14px 0}
+summary{cursor:pointer;font-weight:600;font-size:.98rem;list-style:none;display:flex;justify-content:space-between;gap:12px;align-items:flex-start}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--accent);font-weight:700;flex:none}
+details[open] summary::after{content:"\2013"}
+details p{margin:11px 0 0;color:var(--ink-soft);font-size:.93rem}
+
+footer{border-top:1px solid var(--line)}
+footer .wrap{padding-block:30px}
+</style>
+
+<header class="band">
+  <div class="wrap" style="padding-block:0">
+    <div class="top">
+      <div class="mark"><i></i> Dopamine Desk</div>
+      <div class="pill">$47 / month</div>
+    </div>
+  </div>
+</header>
+
+<section class="band">
+  <div class="wrap">
+    <h1>You don't need another planner. You need a brain that stays set&nbsp;up.</h1>
+    <p class="lede">An ADHD operating system in Notion that updates every month, plus live body&#8209;doubling and a community with no productivity shame.</p>
+    <div class="cta-row">
+      <a class="btn" href="#join">Join &mdash; $47/month</a>
+      <a class="btn btn--ghost" href="#reset">Take the free 20&#8209;minute reset</a>
+    </div>
+    <p class="tiny">Cancel in two clicks. 14-day guarantee: email the word <em>refund</em> and that's the whole process.</p>
+
+    <div class="demo">
+      <div class="demo__head">
+        <div class="demo__title">Your Desk &mdash; Tuesday</div>
+        <div class="demo__title" id="demoCount">3 tasks</div>
+      </div>
+      <div class="demo__body">
+        <p class="ask">How's your brain today?</p>
+        <div class="energy">
+          <button class="ebtn" data-e="low" aria-pressed="false"><span>&#129475;</span>Low</button>
+          <button class="ebtn" data-e="med" aria-pressed="true"><span>&#128267;</span>Medium</button>
+          <button class="ebtn" data-e="high" aria-pressed="false"><span>&#9889;</span>High</button>
+        </div>
+        <button class="badbtn" id="badBtn" aria-pressed="false">&#9889; Bad day? Strip it back</button>
+        <ul class="tasks" id="taskList"></ul>
+        <div class="permits" id="permits" hidden>
+          <p><em>&bull;</em> Nothing today is urgent except one thing.</p>
+          <p><em>&bull;</em> I can eat something easy.</p>
+          <p><em>&bull;</em> I can tell one person.</p>
+          <p><em>&bull;</em> Tomorrow is a different day and I don't have to make up for this one.</p>
+        </div>
+      </div>
+      <div class="demo__foot" id="demoFoot">Sorted by what a task will cost you, not by when it's due.</div>
+    </div>
+  </div>
+</section>
+
+<section class="band band--sunk">
+  <div class="wrap">
+    <p class="eyebrow">The pattern</p>
+    <h2>Why every system you've tried quit on you</h2>
+    <p class="muted">Four planners, three weeks each. It was never the layout.</p>
+    <div class="stack" style="margin-top:26px">
+      <div class="fail">
+        <h3>It needed a setup day you'll never have again</h3>
+        <p>Setup is novel and fun, so you did it beautifully, once. Maintenance needs the exact faculty you don't have reliable access to. The system went stale, and a to-do list that lies is worse than no list.</p>
+      </div>
+      <div class="fail">
+        <h3>It was built around time, and you can't feel time</h3>
+        <p>Time blindness isn't a scheduling preference, it's an absent sense. Any system whose main axis is the clock will fail you on a random Tuesday.</p>
+      </div>
+      <div class="fail">
+        <h3>It had no bad-day mode</h3>
+        <p>Every planner is designed for your best self. But your best self doesn't need a planner. You need something at 2pm on a low day with 31 tabs open.</p>
+      </div>
+      <div class="fail">
+        <h3>It made restarting shameful</h3>
+        <p>The broken streak, the blank pages. The guilt made the tool radioactive, so you bought a different one, and the cycle started again.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <p class="eyebrow">What's inside</p>
+    <h2>A living workspace, not a template</h2>
+    <p class="muted">Duplicate one link and you're in. There's a four-minute first run that gets you to one captured thought and one chosen task, then tells you to stop.</p>
+    <ul class="feat" style="margin-top:22px">
+      <li><b>Today / One Thing</b> &mdash; opens to exactly one decision</li>
+      <li><b>Brain Dump</b> &mdash; voice-to-text, no fields</li>
+      <li><b>Energy-sorted tasks</b> &mdash; by cost, not by date</li>
+      <li><b>Time tools</b> &mdash; your personal estimate multiplier</li>
+      <li><b>12 routines</b> &mdash; each with a 3-step bad-day version</li>
+      <li><b>Project Decomposer</b> &mdash; scary thing to boring next step</li>
+      <li><b>18-minute review</b> &mdash; no journaling, timer visible</li>
+      <li><b>Imperfect streaks</b> &mdash; 4 out of 7 counts as a win</li>
+      <li><b>25-piece Vault</b> &mdash; scripts, checklists, protocols</li>
+      <li><b>Bad Day Mode</b> &mdash; three survivable actions</li>
+    </ul>
+  </div>
+</section>
+
+<section class="band band--sunk">
+  <div class="wrap">
+    <p class="eyebrow">The difference</p>
+    <h2>Three things nothing else you've bought has</h2>
+    <div class="grid2" style="margin-top:22px">
+      <div class="card">
+        <h3>Bad Day Mode</h3>
+        <p>One button hides everything. Three low-energy tasks under two minutes, and four sentences you need on those days. No counts, no overdue red, and no link back to the full list.</p>
+      </div>
+      <div class="card">
+        <h3>Re-Entry</h3>
+        <p>Four steps, under five minutes, for coming back after a month away. Mostly deleting. Members average two to four absences a year and nobody comments on yours &mdash; that's a written rule.</p>
+      </div>
+      <div class="card">
+        <h3>The Changelog</h3>
+        <p>One or two new modules ship every month, driven by member requests, with the requester's name on each entry. Your system gets better while you're not looking.</p>
+      </div>
+    </div>
+    <p class="muted small" style="margin-top:22px">That last one is what the subscription actually buys. You're not renting files &mdash; you're renting the maintenance you were never going to do.</p>
+  </div>
+</section>
+
+<section class="band" id="join">
+  <div class="wrap">
+    <p class="eyebrow">Pricing</p>
+    <h2>Two tiers. Most people want the second one.</h2>
+    <div class="tiers">
+      <div class="tier">
+        <div class="tier__tag">Desk</div>
+        <div class="price">$29<small> /month</small></div>
+        <ul>
+          <li>The full system, newest version</li>
+          <li>Monthly updates &amp; new modules</li>
+          <li>25-piece Resource Vault</li>
+          <li>Community, read-only</li>
+        </ul>
+        <a class="btn btn--ghost" href="#reset">Start here</a>
+      </div>
+      <div class="tier tier--pick">
+        <div class="tier__tag">Desk + Crew &mdash; recommended</div>
+        <div class="price">$47<small> /month</small></div>
+        <ul>
+          <li>Everything in Desk</li>
+          <li>Live body-doubling, several times a week</li>
+          <li>The Reset &mdash; monthly live call</li>
+          <li>Full community + accountability pairing</li>
+          <li>Priority module requests</li>
+        </ul>
+        <a class="btn" href="#reset">Join Desk + Crew</a>
+      </div>
+    </div>
+    <p class="muted small" style="margin-top:18px">The system is what you buy. The Crew is what makes you use it. Annual works out around 30% cheaper and, more usefully, removes twelve monthly decisions.</p>
+  </div>
+</section>
+
+<section class="band band--sunk" id="reset">
+  <div class="wrap">
+    <div class="signup">
+      <p class="eyebrow">Free, no strings</p>
+      <h2>The 20-Minute Reset</h2>
+      <p class="muted" style="margin-bottom:0">One page you fill in when everything has piled up and you don't know where to start. No app, no setup, nothing to maintain. Set a timer and come out the other side knowing the one thing that's actually on fire.</p>
+      <form class="form" id="signupForm" novalidate>
+        <input id="email" type="email" inputmode="email" autocomplete="email" placeholder="you@email.com" aria-label="Your email address" required>
+        <button class="btn" type="submit" id="submitBtn">Send it to me</button>
+      </form>
+      <p class="note" id="formNote">One email with the link. No sequence spam, unsubscribe in one click.</p>
+      <div id="fallback" hidden>
+        <p class="note">Sign-ups here need a Claude account. Easiest route: email the word <b>reset</b> to the address below and it'll come straight back to you.</p>
+        <div class="copyline"><span id="fallbackAddr">hey@dopaminedesk.com</span><button type="button" id="copyBtn">Copy</button></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap wrap--tight">
+    <p class="eyebrow">Before you ask</p>
+    <h2>The honest answers</h2>
+    <div style="margin-top:14px">
+      <details><summary>I'll just abandon this one too.</summary><p>Probably, at least once. That's planned for &mdash; it's the only system here designed around abandonment. There's a Re-Entry page: four steps, under five minutes, mostly deleting. No archive purge, no streak to mourn. The difference is that when you come back, it isn't stale, because somebody else was maintaining it.</p></details>
+      <details><summary>Why monthly? Just sell me the template.</summary><p>Because a static ADHD template is the exact thing that's already failed you several times. The template was never the product; continuous maintenance of your external executive function is. If you genuinely want a one-time file, don't buy this &mdash; you already own four.</p></details>
+      <details><summary>Do I need to know Notion?</summary><p>No. You duplicate one link. If you can use Notes, you can use this, and it's built phone-first &mdash; most members use it 80% on mobile. The free Notion plan is plenty.</p></details>
+      <details><summary>I'm not diagnosed.</summary><p>You don't need a diagnosis to join and nobody will ask. Self-identified, waitlisted, assessed and dismissed, or diagnosed at 38 &mdash; same room, same system.</p></details>
+      <details><summary>Is this therapy or coaching?</summary><p>No. It's systems and community. No medical advice, no medication discussion, no clinicians. Plenty of members use this alongside therapy or medication; it replaces neither.</p></details>
+      <details><summary>What if I stop using it for a month?</summary><p>Then you'll use Re-Entry, which exists precisely for that. Nothing goes stale, because maintaining it isn't your job. And nobody in the community will mention your absence &mdash; that's an actual rule.</p></details>
+    </div>
+  </div>
+</section>
+
+<footer class="band">
+  <div class="wrap">
+    <div class="mark" style="margin-bottom:12px"><i></i> Dopamine Desk</div>
+    <p class="tiny" style="margin:0">A workspace your brain actually wants to open.</p>
+    <p class="tiny" style="margin-top:10px">Not medical advice and not a treatment for ADHD. Systems and company, built by and for ADHD brains.</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  "use strict";
+
+  var TASKS = [
+    {t:"Reply to Dani's message (one line)", e:"low",  m:"2 min · quick win"},
+    {t:"Load the dishwasher",                e:"low",  m:"5 min · autopilot"},
+    {t:"Rename and file the scan",           e:"low",  m:"2 min · autopilot"},
+    {t:"Book the dentist",                   e:"low",  m:"5 min · needs a human"},
+    {t:"Invoice March — send it",       e:"med",  m:"15 min · dread"},
+    {t:"Write the handover notes",           e:"med",  m:"30 min · flow-friendly"},
+    {t:"Food shop order",                    e:"med",  m:"15 min · autopilot"},
+    {t:"Tax folder — name what's missing", e:"med", m:"10 min · dread"},
+    {t:"Draft the proposal",                 e:"high", m:"90 min · flow-friendly"},
+    {t:"Decide on the flat",                 e:"high", m:"Chunky · dread"},
+    {t:"Rework the pricing model",           e:"high", m:"1 hr · flow-friendly"}
+  ];
+  var BAD = [
+    {t:"Drink a glass of water",       e:"low", m:"1 min"},
+    {t:"Reply to Dani — one line", e:"low", m:"2 min"},
+    {t:"Eat something easy",           e:"low", m:"2 min"}
+  ];
+
+  var list = document.getElementById("taskList");
+  var count = document.getElementById("demoCount");
+  var foot = document.getElementById("demoFoot");
+  var permits = document.getElementById("permits");
+  var badBtn = document.getElementById("badBtn");
+  var ebtns = Array.prototype.slice.call(document.querySelectorAll(".ebtn"));
+  var state = {energy:"med", bad:false};
+
+  var FOOT = {
+    low:"On a low day you get four things you can genuinely do. Not thirty.",
+    med:"Sorted by what a task will cost you, not by when it's due.",
+    high:"Your high-energy hours are shorter than you think. This is what they're for.",
+    bad:"No counts. No overdue red. No link back to the full list — on purpose."
+  };
+
+  function render(){
+    var items = state.bad ? BAD : TASKS.filter(function(x){ return x.e === state.energy; });
+    list.textContent = "";
+    items.forEach(function(x){
+      var li = document.createElement("li");
+      li.className = "task";
+      var dot = document.createElement("i");
+      dot.style.background = "var(--" + x.e + ")";
+      var main = document.createElement("div");
+      main.className = "task-main";
+      var t = document.createElement("div");
+      t.className = "task-t";
+      t.textContent = x.t;
+      var m = document.createElement("div");
+      m.className = "task-m";
+      m.textContent = x.m;
+      main.appendChild(t); main.appendChild(m);
+      li.appendChild(dot); li.appendChild(main);
+      list.appendChild(li);
+    });
+    count.textContent = state.bad ? "maintenance day" : items.length + (items.length === 1 ? " task" : " tasks");
+    foot.textContent = state.bad ? FOOT.bad : FOOT[state.energy];
+    permits.hidden = !state.bad;
+    badBtn.setAttribute("aria-pressed", state.bad ? "true" : "false");
+    badBtn.innerHTML = state.bad ? "← I'm back to normal" : "⚡ Bad day? Strip it back";
+    ebtns.forEach(function(b){
+      b.setAttribute("aria-pressed", (!state.bad && b.dataset.e === state.energy) ? "true" : "false");
+    });
+  }
+
+  ebtns.forEach(function(b){
+    b.addEventListener("click", function(){
+      state.energy = b.dataset.e; state.bad = false; render();
+    });
+  });
+  badBtn.addEventListener("click", function(){ state.bad = !state.bad; render(); });
+  render();
+
+  // --- email capture -------------------------------------------------------
+  var form = document.getElementById("signupForm");
+  var emailInput = document.getElementById("email");
+  var submitBtn = document.getElementById("submitBtn");
+  var note = document.getElementById("formNote");
+  var fallback = document.getElementById("fallback");
+  var copyBtn = document.getElementById("copyBtn");
+  var store = null, me = null, ready = false;
+
+  function showFallback(){
+    form.hidden = true;
+    note.hidden = true;
+    fallback.hidden = false;
+  }
+
+  copyBtn.addEventListener("click", function(){
+    var addr = document.getElementById("fallbackAddr").textContent;
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(addr).then(function(){
+        copyBtn.textContent = "Copied";
+        setTimeout(function(){ copyBtn.textContent = "Copy"; }, 2000);
+      }).catch(selectAddr);
+    } else { selectAddr(); }
+  });
+  function selectAddr(){
+    var el = document.getElementById("fallbackAddr");
+    var r = document.createRange(); r.selectNodeContents(el);
+    var s = window.getSelection(); s.removeAllRanges(); s.addRange(r);
+    copyBtn.textContent = "Select + copy";
+  }
+
+  form.addEventListener("submit", function(ev){
+    ev.preventDefault();
+    var value = (emailInput.value || "").trim();
+    if (value.length < 5 || value.indexOf("@") < 1 || value.indexOf(".") < 0) {
+      note.textContent = "That doesn't look like an email address — have another go.";
+      note.className = "note";
+      emailInput.focus();
+      return;
+    }
+    if (!ready) { note.textContent = "One second — still connecting."; return; }
+    if (!store || !me) { showFallback(); return; }
+    submitBtn.disabled = true;
+    submitBtn.textContent = "Sending…";
+    store.collection("signups").doc(me).set({
+      email: value,
+      source: "landing",
+      at: new Date().toISOString()
+    }).then(function(){
+      form.hidden = true;
+      note.className = "note note--ok";
+      note.textContent = "You're on the list. The Reset lands in your inbox shortly — set a timer before you open it.";
+    }).catch(function(){
+      submitBtn.disabled = false;
+      submitBtn.textContent = "Send it to me";
+      showFallback();
+    });
+  });
+
+  if (window.claude && typeof window.claude.use === "function") {
+    Promise.all([window.claude.use("db"), window.claude.use("user")]).then(function(r){
+      store = r[0];
+      var u = r[1];
+      if (!store || !u) { ready = true; return; }
+      return u.id().then(function(id){ me = id; ready = true; });
+    }).catch(function(){ ready = true; });
+    setTimeout(function(){ ready = true; }, 10000);
+  } else {
+    ready = true;
+  }
+})();
+</script>

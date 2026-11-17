@@ -21,7 +21,10 @@ An ADHD productivity systems membership: a living Notion operating system + comm
 | **13** | [**Vault: Worksheets**](13-vault-worksheets.md) | **3 worksheets** — Energy Audit, Abandonment Autopsy, Accommodation Inventory |
 | **14** | [**The 12 routines**](14-routines.md) | Every routine with steps, minutes, skip-safe flags and its bad-day **Minimum Version** |
 
-**Docs 10–14 are the product itself** — 25 Vault resources and 12 routines written in full, ready to paste into Notion. This is the content that makes day one feel worth $47 rather than feeling like an empty template.
+| **15** | [**First-run & remaining copy**](15-first-run-and-copy.md) | The 4-minute first-run page, 22 empty states, demo seed data, the 90-second walkthrough script, the six-tap audit |
+| — | [**landing-page.html**](landing-page.html) | The live landing page (published — see below) |
+
+**Docs 10–15 are the product itself** — 25 Vault resources and 12 routines written in full, ready to paste into Notion. This is the content that makes day one feel worth $47 rather than feeling like an empty template.
 
 ## Decisions already made (change deliberately, not by accident)
 
@@ -66,12 +69,25 @@ Notion imports Markdown directly, so this is paste work, not retyping.
 
 **Realistic time:** 3–4 hours of paste-and-map for all 37 pieces. Do it in two sittings, Vault first.
 
+## The landing page
+
+`landing-page.html` is published and live at **https://claude.ai/artifact/BDYqJ1QoZb32LacJdTxhpG**
+
+It carries the hero, the four failure modes, what's inside, the three differentiators, pricing, the lead-magnet opt-in and the FAQ — plus a live interactive demo of energy-sorting and Bad Day Mode, which does more work than any paragraph of copy.
+
+**Before you share it widely, two changes:**
+1. **Swap the placeholder email** (`hey@dopaminedesk.com`) for a real address you own.
+2. **Decide on the opt-in.** Sign-ups on this page write to the artifact's own store, which means only signed-in Claude viewers can submit; everyone else gets the email fallback. That's fine for showing people and for warm traffic, and wrong for cold TikTok traffic. For that, put the page on your own domain and point the form at a real email provider (MailerLite, ConvertKit, Beehiiv — any of them is fine, and the free tiers cover your first 1,000 subscribers).
+
+Sign-ups are readable only by you: the access rules let each viewer write their own row and nobody else's, and only an editor can list the collection.
+
 ## What's left after this
 
 - [ ] Build the Notion workspace itself — doc 04, prompts 1, 2, 3, 5 (~9–10 h; prompt 4's Vault is now written)
 - [ ] Paste in docs 10–14 (~3–4 h)
-- [ ] Lead magnet live + email capture (doc 05)
+- [ ] Real domain + real email provider for the landing page
 - [ ] Whop store — manual, ~30 min of pasting from doc 06, after the product exists
-- [ ] Sales page (doc 02)
 - [ ] Discord set up, pins posted, 4 weeks of sessions scheduled (doc 08)
 - [ ] Start posting (doc 07)
+
+Everything that can be written has been written. What remains needs your accounts: Notion, Whop, Discord, a domain, an email provider.
