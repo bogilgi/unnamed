@@ -15,6 +15,13 @@ An ADHD productivity systems membership: a living Notion operating system + comm
 | 07 | [Content](07-content-30-days.md) | 30-day calendar + 10 ready-to-film scripts + production system |
 | 08 | [Onboarding](08-onboarding.md) | 8 emails, win-back, all Discord pinned posts, weekly rhythm, cancellation flow |
 | 09 | [Monthly updates](09-monthly-update-process.md) | The four-window process that keeps the subscription honest, + metrics & failure modes |
+| **10** | [**Vault: Scripts**](10-vault-scripts.md) | **9 send-ready scripts** — extensions, telling your boss, cancelling honestly, accommodations, the 3-week-old email, assessment referral, parents, partners, apologising without spiralling |
+| **11** | [**Vault: Checklists**](11-vault-checklists.md) | **8 timed checklists** — doom pile, pre-appointment, taxes entry point, 20-min apartment reset, packing, meds ran out, job applications, inbox amnesty |
+| **12** | [**Vault: Protocols**](12-vault-protocols.md) | **5 protocols** — dread tasks, time multiplier, the 2pm crash, hyperfocus exit, Sunday dread |
+| **13** | [**Vault: Worksheets**](13-vault-worksheets.md) | **3 worksheets** — Energy Audit, Abandonment Autopsy, Accommodation Inventory |
+| **14** | [**The 12 routines**](14-routines.md) | Every routine with steps, minutes, skip-safe flags and its bad-day **Minimum Version** |
+
+**Docs 10–14 are the product itself** — 25 Vault resources and 12 routines written in full, ready to paste into Notion. This is the content that makes day one feel worth $47 rather than feeling like an empty template.
 
 ## Decisions already made (change deliberately, not by accident)
 
@@ -27,7 +34,7 @@ An ADHD productivity systems membership: a living Notion operating system + comm
 
 ## Build order
 
-1. Doc 04 sessions 1–5 → The Desk v1.0 (~15 h)
+1. Doc 04 sessions 1–5 → The Desk v1.0 (~15 h). **Build prompt 4 is now mostly done** — paste docs 10–14 in instead of generating the Vault from scratch, which cuts the longest session roughly in half
 2. Doc 05 → lead magnet live + email capture
 3. Doc 06 → Whop store, both tiers, clean-account purchase test
 4. Doc 02 → sales page
@@ -41,3 +48,30 @@ An ADHD productivity systems membership: a living Notion operating system + comm
 
 - **Legal/claims:** nothing anywhere should claim to treat, manage or improve ADHD symptoms. The disclaimer (*not medical advice, not a treatment*) belongs on the sales page, the Whop listing, the Discord rules and the Notion home page. The community rule banning medication advice is the one rule to enforce firmly, every time.
 - **The monthly promise is the business.** It is the reason recurring pricing is defensible. Doc 09 budgets ~10 hours a month for it. Protect those hours ahead of content, ahead of ads, ahead of everything.
+
+## Loading the Vault into Notion (docs 10–14)
+
+Notion imports Markdown directly, so this is paste work, not retyping.
+
+**The Vault (docs 10–13 → `DB: Resources`)**
+1. Create the 25 rows first, filling only `Resource`, `Type`, `Use when`, `Topic`, `Minutes`, `Energy` from each heading block. 25 rows, ~20 minutes.
+2. Open each row and paste its body. Markdown pastes into Notion with headings, tables, callouts and checkboxes intact.
+3. Tick `New this month?` on all 25 for launch month — it populates the "New this month" gallery on day one, which is the first thing a new member sees.
+4. The `> blockquote` at the top of most resources should become a Notion **callout** block. It's the framing line, and it's the bit that makes the resource feel written by someone with the same brain.
+
+**The routines (doc 14 → `DB: Routines` + `DB: Routine Steps`)**
+1. 12 rows in `Routines`: `Routine`, `When`, `Energy Needed`, `Minimum Version`.
+2. Each table becomes rows in `Routine Steps` — paste the table into the Steps database view and map the columns (`Step`, `Order`, `Minutes`, `Optional?`, `Skip-safe?`).
+3. Set `Active` = ✅ on **only three**: R1 Morning, R3 Work Shutdown, R7 Bad Day Minimum. The over-adoption failure in week one is real and this prevents it.
+
+**Realistic time:** 3–4 hours of paste-and-map for all 37 pieces. Do it in two sittings, Vault first.
+
+## What's left after this
+
+- [ ] Build the Notion workspace itself — doc 04, prompts 1, 2, 3, 5 (~9–10 h; prompt 4's Vault is now written)
+- [ ] Paste in docs 10–14 (~3–4 h)
+- [ ] Lead magnet live + email capture (doc 05)
+- [ ] Whop store — manual, ~30 min of pasting from doc 06, after the product exists
+- [ ] Sales page (doc 02)
+- [ ] Discord set up, pins posted, 4 weeks of sessions scheduled (doc 08)
+- [ ] Start posting (doc 07)
