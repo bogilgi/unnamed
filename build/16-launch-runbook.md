@@ -3,21 +3,23 @@
 Sixteen documents is itself a doom pile. This is the single ordered path through them.
 
 **Rules for using this:**
-- **Do the phases in order.** Each one unblocks the next. The one unrecoverable mistake is opening a Whop store that points at an empty Notion template.
+- **Do the phases in order** — note that Phase 4 (the free front door) comes before Phase 1 (the build). Each phase unblocks the next. The one unrecoverable mistake is opening a Whop store that points at an empty Notion template.
 - **One session = one sitting.** Nothing here is longer than ~3 hours.
 - **The "not yet" list at the bottom is load-bearing.** Everything on it will feel urgent and all of it is a trap before you have 20 members.
-- Total: **~28 hours of work** across 4–6 weeks at a realistic pace.
+- Total: **~28 hours of work** across 4–6 weeks at a realistic pace, and **$0 up front** (see doc 17).
 
 ---
 
-## PHASE 0 — Claim the names (45 min, do today)
+## PHASE 0 — Claim the names (30 min, do today, $0)
 
-- [ ] Register `dopaminedesk.com` (or your chosen name — doc 01)
-- [ ] Claim `@dopaminedesk` on TikTok, Instagram, YouTube, Reddit, X — **even the ones you won't use**
-- [ ] Create a dedicated email address: `hey@yourdomain.com`
-- [ ] Whop account created, payout details verified *(verification takes days — start it now, use it later)*
+- [ ] Claim `@dopaminedesk` on TikTok, Instagram, YouTube, Reddit — **even the ones you won't use**
+- [ ] Create `dopaminedesk@gmail.com`
+- [ ] Create a free Beehiiv account (this is your landing page *and* your email list)
+- [ ] Create a Whop account and start payout verification *(free; verification takes days, so start it now and use it later)*
 
-> This is 45 minutes and it's the only genuinely time-sensitive task in the document. Names get taken.
+> 30 minutes, no money, and the only genuinely time-sensitive task in the document. Names get taken.
+>
+> **A domain is optional.** Skip it until you have paying members and it comes out of revenue. Full free-stack walkthrough: **doc 17**.
 
 ---
 
@@ -66,16 +68,19 @@ This is the phase that decides whether day one feels worth $47.
 
 ---
 
-## PHASE 4 — Front door (2 h)
+## PHASE 4 — Front door (2 h, $0) ← **do this before Phase 1**
 
-- [ ] Put `landing-page.html` on your real domain *(or rebuild it in Framer/Carrd from the copy in doc 02)*
-- [ ] Swap the placeholder email for your real one
-- [ ] Connect the form to a real email provider — MailerLite, ConvertKit or Beehiiv. Free tiers cover your first 1,000 subscribers, and this is the only asset you own
-- [ ] Build the lead magnet as a Notion page (doc 05) and set its duplicate link
-- [ ] Load the 4 delivery emails (doc 05) into the provider as an automation
+Step-by-step clicks for all of this: **doc 17**.
+
+- [ ] Build the opt-in page in **Beehiiv** (free) using the copy from doc 05 → gives you `dopaminedesk.beehiiv.com`
+- [ ] Build the 20-Minute Reset as a Notion page (doc 05) and turn on its duplicate link
+- [ ] Load the 4 delivery emails (doc 05) into Beehiiv as an automation
+- [ ] Put `landing-page.html` up later, once you have a domain — the Beehiiv page is enough to start
 - [ ] **Send yourself through the whole funnel** — opt in, get the email, click the link, duplicate the page
 
 **Done when:** you can hand someone a URL and they get the Reset without you doing anything.
+
+> **Why this moved ahead of the build:** the lead magnet is already written, so the front door is ~2 hours. If nobody signs up for a free one-page reset, you've learned that for 2 hours instead of 15. And if they do, you build the Desk with a waiting list instead of into the void.
 
 ---
 

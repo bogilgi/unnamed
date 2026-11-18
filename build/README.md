@@ -23,6 +23,7 @@ An ADHD productivity systems membership: a living Notion operating system + comm
 
 | **15** | [**First-run & remaining copy**](15-first-run-and-copy.md) | The 4-minute first-run page, 22 empty states, demo seed data, the 90-second walkthrough script, the six-tap audit |
 | **16** | [**Launch runbook**](16-launch-runbook.md) | The single ordered path through all of it: 8 phases, ~28 h, plus the "not yet" list |
+| **17** | [**Free setup walkthrough**](17-free-setup-walkthrough.md) | Every click to launch for $0 — Beehiiv, Notion, Discord, Whop, and what Whop actually takes |
 | — | [**landing-page.html**](landing-page.html) | The live landing page (published — see below) |
 | — | [**notion-csv/**](notion-csv/README.md) | 8 CSVs, 175 rows, importable straight into Notion + the property types to set afterwards |
 
@@ -83,7 +84,7 @@ It carries the hero, the four failure modes, what's inside, the three differenti
 
 **Before you share it widely, two changes:**
 1. **Swap the placeholder email** (`hey@dopaminedesk.com`) for a real address you own.
-2. **Decide on the opt-in.** Sign-ups on this page write to the artifact's own store, which means only signed-in Claude viewers can submit; everyone else gets the email fallback. That's fine for showing people and for warm traffic, and wrong for cold TikTok traffic. For that, put the page on your own domain and point the form at a real email provider (MailerLite, ConvertKit, Beehiiv — any of them is fine, and the free tiers cover your first 1,000 subscribers).
+2. **Decide on the opt-in.** Sign-ups on this page write to the artifact's own store, which means only signed-in Claude viewers can submit; everyone else gets the email fallback. That's fine for showing people and for warm traffic, and wrong for cold TikTok traffic. **For the $0 path, don't use this page as your front door at all** — build the opt-in in Beehiiv's free tier instead (doc 17) and keep this page as a demo you can send people. Put it on a real domain later, once revenue pays for one.
 
 Sign-ups are readable only by you: the access rules let each viewer write their own row and nobody else's, and only an editor can list the collection.
 
