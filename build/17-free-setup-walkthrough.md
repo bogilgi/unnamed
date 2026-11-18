@@ -16,7 +16,7 @@ Nothing in this document costs money up front. The only money that ever leaves i
 | Body doubling (voice/video) | **Discord** voice channels | $0 | Unlimited |
 | Payments + access control | **Whop** | $0 up front, cut per sale | — |
 | Walkthrough video | Phone screen recording | $0 | — |
-| Your business email | `dopaminedesk@gmail.com` | $0 | — |
+| Your business email | `dopaminedesks@gmail.com` | $0 | — |
 | Timers, graphics, scheduling | Phone clock, Canva free, native schedulers | $0 | — |
 
 **Not needed:** a domain, a website builder, Zoom (its free tier cuts you off at 40 minutes, which is exactly when body doubling gets useful — Discord voice is unlimited), Loom, a Notion paid plan, or any course platform.
@@ -44,10 +44,22 @@ On a $47 sale that's roughly **$1.60–$3.00**, so you keep about $44–45. Veri
 # DAY 1 — 30 minutes
 
 ## 1. Claim the handles (15 min)
-Sign up and claim `@dopaminedesk` (or your name) on **TikTok, Instagram, YouTube, Reddit**. Do all four even for the ones you won't post to — reclaiming a taken handle is impossible and this is the only irreversible thing on the list.
+
+**Check one string on all four platforms before you claim any of them.** Claiming piecemeal is how you end up as `@dopaminedesk` on TikTok, `@dopaminedesk.co` on Instagram and `@dopaminedeskhq` on YouTube — which costs real follows, because people search the name they saw and find nothing.
+
+Check in this order and take the first string that's free on **TikTok, Instagram, YouTube and Reddit** together:
+
+1. `dopaminedesk`
+2. `thedopaminedesk`
+3. `dopaminedesks`
+4. `dopaminedeskhq`
+
+Consistency beats elegance — take the one that's available everywhere even if it isn't your favourite. Then claim all four, including platforms you don't plan to post to; reclaiming a taken handle is impossible, and this is the only irreversible item in the whole document.
+
+> Gmail availability tells you nothing here. That namespace has been saturated for fifteen years and almost nobody sees your address anyway — it's your reply-to and refund address, not a public identity.
 
 ## 2. Make the email address (2 min)
-`dopaminedesk@gmail.com`. Keep it entirely separate from your personal inbox. This is your refund address, your support address and your reply-to.
+`dopaminedesks@gmail.com` — done. Keep it entirely separate from your personal inbox. This is your refund address, your support address and your reply-to, and it does not need to match your social handles.
 
 ## 3. Beehiiv account (5 min)
 Sign up free at beehiiv.com. Name the publication **Dopamine Desk**. It'll give you `dopaminedesk.beehiiv.com` — that's your landing-page URL, and it's enough to launch with. Don't configure anything else yet.
@@ -86,7 +98,7 @@ Beehiiv → automations. Create one triggered by a new subscriber, with the four
 - **Email 3** — day 4, `why your planner abandoned you`
 - **Email 4** — day 7, `the 2pm problem`
 
-Set the sender name to your name, reply-to `dopaminedesk@gmail.com`. Turn the automation on.
+Set the sender name to your name, reply-to `dopaminedesks@gmail.com`. Turn the automation on.
 
 ## 4. Test the whole funnel (10 min)
 Subscribe with a different email address of your own. Confirm: email 1 arrives, link works, page duplicates. Then check the sender name looks like a person, not a company.
@@ -171,7 +183,7 @@ With a second account and a real card:
 - Duplicate the Notion template as that member
 - Cancel → is the role removed?
 - Refund yourself from the dashboard
-- Email `dopaminedesk@gmail.com` the word *refund* and confirm it arrives somewhere you'll actually see it
+- Email `dopaminedesks@gmail.com` the word *refund* and confirm it arrives somewhere you'll actually see it
 
 **Done when you've been through buy → access → cancel → refund yourself.** Nobody else should discover a broken step in that chain.
 

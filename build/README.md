@@ -83,7 +83,7 @@ Notion imports Markdown directly, so this is paste work, not retyping.
 It carries the hero, the four failure modes, what's inside, the three differentiators, pricing, the lead-magnet opt-in and the FAQ — plus a live interactive demo of energy-sorting and Bad Day Mode, which does more work than any paragraph of copy.
 
 **Before you share it widely, two changes:**
-1. **Swap the placeholder email** (`hey@dopaminedesk.com`) for a real address you own.
+1. **Swap the placeholder email** (`dopaminedesks@gmail.com`) for a real address you own.
 2. **Decide on the opt-in.** Sign-ups on this page write to the artifact's own store, which means only signed-in Claude viewers can submit; everyone else gets the email fallback. That's fine for showing people and for warm traffic, and wrong for cold TikTok traffic. **For the $0 path, don't use this page as your front door at all** — build the opt-in in Beehiiv's free tier instead (doc 17) and keep this page as a demo you can send people. Put it on a real domain later, once revenue pays for one.
 
 Sign-ups are readable only by you: the access rules let each viewer write their own row and nobody else's, and only an editor can list the collection.

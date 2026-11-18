@@ -147,7 +147,7 @@ There are no testimonials yet, because this launched [MONTH]. What there is inst
 
 ### The 14-day "did you actually open it" guarantee
 
-Use it for 14 days. If opening your Desk still feels like a chore, email `hey@dopaminedesk.com` with the word *refund* and nothing else. No form, no reason required, no "let's hop on a quick call." Money back, and you keep the lead-magnet system.
+Use it for 14 days. If opening your Desk still feels like a chore, email `dopaminedesks@gmail.com` with the word *refund* and nothing else. No form, no reason required, no "let's hop on a quick call." Money back, and you keep the lead-magnet system.
 
 I'd rather lose $47 than be the sixth thing that made you feel bad about your brain.
 
