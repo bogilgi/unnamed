@@ -16,7 +16,7 @@ Nothing in this document costs money up front. The only money that ever leaves i
 | Body doubling (voice/video) | **Discord** voice channels | $0 | Unlimited |
 | Payments + access control | **Whop** | $0 up front, cut per sale | — |
 | Walkthrough video | Phone screen recording | $0 | — |
-| Your business email | `dopaminedesks@gmail.com` | $0 | — |
+| Your business email | `dopaminedeskadhd@gmail.com` | $0 | — |
 | Timers, graphics, scheduling | Phone clock, Canva free, native schedulers | $0 | — |
 
 **Not needed:** a domain, a website builder, Zoom (its free tier cuts you off at 40 minutes, which is exactly when body doubling gets useful — Discord voice is unlimited), Loom, a Notion paid plan, or any course platform.
@@ -64,7 +64,7 @@ Fill these in once and keep them identical everywhere. Replace the handle with w
 
 | Platform | Username / handle | Name field | Notes |
 |---|---|---|---|
-| Gmail | `dopaminedesks` | First: `Dopamine` · Last: `Desk` | Shows as "Dopamine Desk". **Never** add "Support" or "Team" — it reads like a ticket queue, and the whole positioning is a friend with the same brain |
+| Gmail | `dopaminedeskadhd` | First: `Dopamine` · Last: `Desk` | Shows as "Dopamine Desk". **Never** add "Support" or "Team" — it reads like a ticket queue, and the whole positioning is a friend with the same brain |
 | Beehiiv sender | — | **your first name** | Email from a person gets opened far more than email from a brand. Reply-to stays the Gmail |
 | TikTok | `dopaminedeskadhd` | `Dopamine Desk · ADHD systems` | See the keyword note below |
 | Instagram | `dopaminedeskadhd` | `Dopamine Desk \| ADHD systems` | Same |
@@ -100,10 +100,10 @@ Late-diagnosed. I build ADHD systems.
 ### A note on Gmail addresses
 Gmail ignores dots, so `dopamine.desk@gmail.com` is the same account as `dopaminedesk@gmail.com` — if one is taken, every dotted variant is too. You need a genuinely different string. Best to worst: `dopaminedeskadhd`, `dopaminedesks`, `hellodopaminedesk`, `dopaminedeskhq`, `getdopaminedesk`, `dopaminedeskco`. Avoid anything with a year in it; it looks temporary and dates the account.
 
-Settle the social handle first, then make the Gmail match it. Nobody has ever declined to buy something because of the sender's Gmail address, so don't lose a day here.
+**Settled:** `dopaminedeskadhd@gmail.com`. The social handles should match it — `dopaminedeskadhd` on all four platforms.
 
 ## 2. Make the email address (2 min)
-`dopaminedesks@gmail.com` — done. Keep it entirely separate from your personal inbox. This is your refund address, your support address and your reply-to, and it does not need to match your social handles.
+`dopaminedeskadhd@gmail.com` — done. Keep it entirely separate from your personal inbox. This is your refund address, your support address and your reply-to, and it does not need to match your social handles.
 
 ## 3. Beehiiv account (5 min)
 Sign up free at beehiiv.com. Name the publication **Dopamine Desk**. It'll give you `dopaminedesk.beehiiv.com` — that's your landing-page URL, and it's enough to launch with. Don't configure anything else yet.
@@ -142,7 +142,7 @@ Beehiiv → automations. Create one triggered by a new subscriber, with the four
 - **Email 3** — day 4, `why your planner abandoned you`
 - **Email 4** — day 7, `the 2pm problem`
 
-Set the sender name to your name, reply-to `dopaminedesks@gmail.com`. Turn the automation on.
+Set the sender name to your name, reply-to `dopaminedeskadhd@gmail.com`. Turn the automation on.
 
 ## 4. Test the whole funnel (10 min)
 Subscribe with a different email address of your own. Confirm: email 1 arrives, link works, page duplicates. Then check the sender name looks like a person, not a company.
@@ -227,7 +227,7 @@ With a second account and a real card:
 - Duplicate the Notion template as that member
 - Cancel → is the role removed?
 - Refund yourself from the dashboard
-- Email `dopaminedesks@gmail.com` the word *refund* and confirm it arrives somewhere you'll actually see it
+- Email `dopaminedeskadhd@gmail.com` the word *refund* and confirm it arrives somewhere you'll actually see it
 
 **Done when you've been through buy → access → cancel → refund yourself.** Nobody else should discover a broken step in that chain.
 

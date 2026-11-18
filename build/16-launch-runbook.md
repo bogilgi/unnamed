@@ -13,7 +13,7 @@ Sixteen documents is itself a doom pile. This is the single ordered path through
 ## PHASE 0 — Claim the names (30 min, do today, $0)
 
 - [ ] Claim `@dopaminedesk` on TikTok, Instagram, YouTube, Reddit — **even the ones you won't use**
-- [ ] Create `dopaminedesks@gmail.com`
+- [ ] Create `dopaminedeskadhd@gmail.com`
 - [ ] Create a free Beehiiv account (this is your landing page *and* your email list)
 - [ ] Create a Whop account and start payout verification *(free; verification takes days, so start it now and use it later)*
 
