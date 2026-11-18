@@ -1,0 +1,76 @@
+Step,Routine,Order,Minutes,Optional?,Skip-safe?
+Feet on the floor. Sit up on the edge of the bed for 10 seconds,Morning,1,1,No,No
+"Water — a full glass, before anything else",Morning,2,1,No,No
+"Meds, if you take them. Same place, every day, visible",Morning,3,1,No,No
+Open the curtains / get light on your face,Morning,4,1,No,Yes
+Open your Desk → tap today's energy (one tap),Morning,5,1,No,Yes
+Read your One Thing. Don't do it. Just read it,Morning,6,1,No,Yes
+Eat something. Anything. A low bar on purpose,Morning,7,3,No,No
+Stop. Routine complete,Morning,8,0,No,No
+"Clear the desk surface. Everything off it, into one pile if necessary",Work Start,1,2,No,Yes
+Water within reach,Work Start,2,1,No,Yes
+Phone in a drawer or another room,Work Start,3,1,No,No
+Open your Desk. Tap energy,Work Start,4,1,No,Yes
+Pick the One Thing for today — match it to the energy you just logged,Work Start,5,1,No,No
+Write its first physical action (open what? click what?),Work Start,6,1,No,No
+Timer: 25 minutes. Start the first physical action,Work Start,7,0,No,No
+Brain dump everything still in your head. Fragments only,Work Shutdown,1,3,No,No
+Write tomorrow's One Thing and its first physical action,Work Shutdown,2,2,No,No
+Any promise you made today that isn't written down → write it down now,Work Shutdown,3,1,No,No
+Close the tabs. All of them. They are not a to-do list,Work Shutdown,4,1,No,Yes
+"Tidy the desk surface — 60 seconds, not properly",Work Shutdown,5,1,Yes,Yes
+"Say out loud: ""Work is finished for today.""",Work Shutdown,6,0,No,No
+Kitchen: everything into the sink or the dishwasher. Not washed — collected,Evening Landing,1,3,No,Yes
+One surface cleared. Any surface,Evening Landing,2,2,No,Yes
+"Tomorrow's launch kit by the door: keys, bag, anything you must not forget",Evening Landing,3,2,No,No
+Charge your phone outside the bedroom if you can,Evening Landing,4,1,Yes,Yes
+Set the alarm. And a leaving alarm if you have to be somewhere,Evening Landing,5,1,No,No
+"Meds in place for the morning, where you'll see them",Evening Landing,6,1,No,No
+Stop. The day's over and nothing else is required of you,Evening Landing,7,0,No,No
+"Touch each one and say it: phone, keys, wallet",Leaving the House,1,1,No,No
+"Today's extras: meds, laptop, charger, the document, the gift",Leaving the House,2,1,No,No
+"Check the address in the actual booking, not from memory",Leaving the House,3,1,No,Yes
+Leave. Don't start anything. Not one small thing,Leaving the House,4,0,No,No
+"Before you do anything else, open the Brain Dump",Post-Meeting Dump,1,0,No,No
+"What did I agree to do? Dump each one, no formatting",Post-Meeting Dump,2,1,No,No
+What did someone else agree to do? Dump it — nobody else will remember,Post-Meeting Dump,3,1,No,Yes
+Any date mentioned → straight into the calendar now,Post-Meeting Dump,4,1,No,No
+"Stop. Triage later, not now",Post-Meeting Dump,5,0,No,No
+"Water. Food. Both, now, before any thinking",Bad Day Minimum,1,2,No,No
+Meds if you take them and haven't,Bad Day Minimum,2,1,No,No
+Open Bad Day Mode — not your task list,Bad Day Minimum,3,1,No,No
+Do one thing from it. Under two minutes. One,Bad Day Minimum,4,1,No,No
+"Tell one person, or post in #low-energy-days. A single emoji counts",Bad Day Minimum,5,0,Yes,Yes
+Stop. Today is complete,Bad Day Minimum,6,0,No,No
+Timer: 15 minutes. Music on,Doom Pile Reset,1,1,No,No
+"Four containers: bin bag, elsewhere bag, LATER box, the surface",Doom Pile Reset,2,1,No,No
+"One item at a time. Two seconds per item. Four destinations, no fifth",Doom Pile Reset,3,12,No,No
+"Holding something and thinking about it? → LATER box, immediately",Doom Pile Reset,4,0,No,No
+"Timer goes → stop, even mid-pile",Doom Pile Reset,5,0,No,No
+Bin bag to the actual bin. The only step you must finish,Doom Pile Reset,6,1,No,No
+LATER box into a cupboard with a date 30 days out,Doom Pile Reset,7,0,No,Yes
+Select everything older than 30 days → folder OLD. Not deleted,Inbox Mercy Pass,1,2,No,No
+Timer: 6 minutes on what's left. REPLY / task written down / archive,Inbox Mercy Pass,2,6,No,No
+Unsubscribe from the next five marketing emails you see,Inbox Mercy Pass,3,2,No,Yes
+Stop. Replies are a separate job for a separate day,Inbox Mercy Pass,4,0,No,No
+Night before: confirm time and address from the actual booking,Pre-Appointment,1,1,No,No
+Travel time × 1.5 → set a leaving alarm,Pre-Appointment,2,1,No,No
+Write the three things you need to say or ask. Most important first,Pre-Appointment,3,2,No,No
+"By the door: ID, reference number, payment method, water",Pre-Appointment,4,1,No,No
+"On the day: alarm goes → leave within 10 minutes, start nothing",Pre-Appointment,5,0,No,No
+"Before leaving, ask: ""What happens next, and who does it?"" Write the answer down there and then",Pre-Appointment,6,1,No,No
+"Calendar, next 7 days only. Count the fixed commitments. Say the number out loud",Sunday Soft Reset,1,3,No,No
+Spot anything you'd forgotten → that was the dread,Sunday Soft Reset,2,1,No,No
+"Name the one hard thing of the week, in writing, and pick its day",Sunday Soft Reset,3,3,No,No
+Cancel one thing. There's usually one. Use script S3,Sunday Soft Reset,4,3,No,No
+Write what you're not doing this week — explicitly,Sunday Soft Reset,5,2,No,No
+Monday's One Thing + its first physical action,Sunday Soft Reset,6,3,No,No
+"Clothes out, bag packed, both alarms set",Sunday Soft Reset,7,3,No,Yes
+"Put one nice thing in the week, on a specific day",Sunday Soft Reset,8,1,Yes,Yes
+"Laptop shut. No ""quick look"" at email",Sunday Soft Reset,9,0,No,No
+Don't read your task list. Not yet,Re-Entry After Absence,1,0,No,No
+Open the Frozen view. Delete ten things. Deleting is doing,Re-Entry After Absence,2,2,No,No
+Open Real Deadlines. Is anything actually on fire? Usually no,Re-Entry After Absence,3,1,No,No
+Pick one 15-minute task → make it The One Thing,Re-Entry After Absence,4,1,No,No
+"Do it, or don't. Either way, re-entry is complete",Re-Entry After Absence,5,0,No,Yes
+Say hi in #re-entry if you feel like it. Or don't,Re-Entry After Absence,6,0,Yes,Yes

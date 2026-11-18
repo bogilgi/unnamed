@@ -22,7 +22,9 @@ An ADHD productivity systems membership: a living Notion operating system + comm
 | **14** | [**The 12 routines**](14-routines.md) | Every routine with steps, minutes, skip-safe flags and its bad-day **Minimum Version** |
 
 | **15** | [**First-run & remaining copy**](15-first-run-and-copy.md) | The 4-minute first-run page, 22 empty states, demo seed data, the 90-second walkthrough script, the six-tap audit |
+| **16** | [**Launch runbook**](16-launch-runbook.md) | The single ordered path through all of it: 8 phases, ~28 h, plus the "not yet" list |
 | — | [**landing-page.html**](landing-page.html) | The live landing page (published — see below) |
+| — | [**notion-csv/**](notion-csv/README.md) | 8 CSVs, 175 rows, importable straight into Notion + the property types to set afterwards |
 
 **Docs 10–15 are the product itself** — 25 Vault resources and 12 routines written in full, ready to paste into Notion. This is the content that makes day one feel worth $47 rather than feeling like an empty template.
 
@@ -34,6 +36,10 @@ An ADHD productivity systems membership: a living Notion operating system + comm
 - **Energy is the primary sort axis**, not dates.
 - **Three features carry the differentiation:** Bad Day Mode, Re-Entry, and the monthly Changelog.
 - **The subscription sells maintenance, not files.** Every piece of copy has to make that legible.
+
+## Start here
+
+**[16-launch-runbook.md](16-launch-runbook.md)** — the ordered path, with time estimates and the list of things not to do yet. Everything below is the older summary.
 
 ## Build order
 
