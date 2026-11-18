@@ -58,6 +58,50 @@ Consistency beats elegance — take the one that's available everywhere even if 
 
 > Gmail availability tells you nothing here. That namespace has been saturated for fifteen years and almost nobody sees your address anyway — it's your reply-to and refund address, not a public identity.
 
+## 1b. The identity sheet — what to put in every field
+
+Fill these in once and keep them identical everywhere. Replace the handle with whatever you actually landed on.
+
+| Platform | Username / handle | Name field | Notes |
+|---|---|---|---|
+| Gmail | `dopaminedesks` | First: `Dopamine` · Last: `Desk` | Shows as "Dopamine Desk". **Never** add "Support" or "Team" — it reads like a ticket queue, and the whole positioning is a friend with the same brain |
+| Beehiiv sender | — | **your first name** | Email from a person gets opened far more than email from a brand. Reply-to stays the Gmail |
+| TikTok | `dopaminedeskadhd` | `Dopamine Desk · ADHD systems` | See the keyword note below |
+| Instagram | `dopaminedeskadhd` | `Dopamine Desk \| ADHD systems` | Same |
+| YouTube | `@dopaminedeskadhd` | `Dopamine Desk` | Channel name only |
+| Reddit | `dopaminedeskadhd` | leave blank | See the Reddit note below |
+| Whop | `dopamine-desk` | `Dopamine Desk` | |
+| Discord server | — | `Dopamine Desk` | Your own nickname: `[your name] (founder)` |
+
+**The Name field on TikTok and Instagram is searchable; the username is not.** Don't waste it repeating your handle — put the words people actually type, i.e. "ADHD systems". That's free discovery daily, and most accounts throw it away on a duplicate of their @.
+
+**Don't present as a brand on Reddit.** r/ADHD and r/adhdwomen downvote and often remove accounts that read as products. Leave the display name empty, build genuine comment history for a week or two before posting anything, and keep your link in your profile only — never in a post body. Reddit is the one platform where looking like a business is a liability.
+
+### Bios
+
+TikTok / Instagram:
+```
+ADHD systems that survive a bad week
+Built by someone with the same brain
+Free 20-min reset ↓
+```
+
+YouTube:
+```
+Productivity systems for brains that abandoned four planners.
+Energy-based planning, body doubling, and no productivity shame.
+```
+
+Reddit profile — one plain line, no pitch:
+```
+Late-diagnosed. I build ADHD systems.
+```
+
+### A note on Gmail addresses
+Gmail ignores dots, so `dopamine.desk@gmail.com` is the same account as `dopaminedesk@gmail.com` — if one is taken, every dotted variant is too. You need a genuinely different string. Best to worst: `dopaminedeskadhd`, `dopaminedesks`, `hellodopaminedesk`, `dopaminedeskhq`, `getdopaminedesk`, `dopaminedeskco`. Avoid anything with a year in it; it looks temporary and dates the account.
+
+Settle the social handle first, then make the Gmail match it. Nobody has ever declined to buy something because of the sender's Gmail address, so don't lose a day here.
+
 ## 2. Make the email address (2 min)
 `dopaminedesks@gmail.com` — done. Keep it entirely separate from your personal inbox. This is your refund address, your support address and your reply-to, and it does not need to match your social handles.
 
